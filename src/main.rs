@@ -17,12 +17,10 @@ fn main() {
         "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eight", "ninth",
         "tenth", "eleventh", "twelfth",
     ];
-    let mut counter: usize = 0;
     for x in 0..12 {
         let mut carol: String = String::from("On the ");
         carol.push_str(days[x]);
         carol.push_str(" day of Christmas,\nmy true love gave to me");
-        counter = 0;
         for index in (0..x + 1).rev() {
             let carol_line: &str = carol_array[index];
             carol.push_str("\n");
